@@ -6,31 +6,46 @@ This interactive web app predicts the **actual market value** of football player
 
 ## 🧠 Project Summary
 
-- Predict player market value using stats from **SoFIFA.com**
-- Visualize feature relationships and correlations
-- Build a **Random Forest Regressor** to model player value
-- Explore **residuals**, undervalued and overvalued players
-- Fully interactive **web app** powered by Streamlit
+- 🔍 **Data Collection**: Player data was retrieved via **web scraping** from [SoFIFA.com](https://sofifa.com) using Python (`requests`, `BeautifulSoup`) — see [`FootballData.ipynb`](./FootballData.ipynb).
+- 🧼 **Data Cleaning & Engineering**: Unnecessary features were dropped, and columns were renamed and processed for modeling.
+- 📊 **Exploratory Analysis**: Heatmaps, pairplots, and correlation matrices to analyze features.
+- 🤖 **Modeling**: A **Random Forest Regressor** predicts player market value.
+- 📈 **Evaluation & Visualization**: Residual analysis, undervalued vs. overvalued charts, and actual vs. predicted comparisons.
 
 ---
-## 🧪 Features Used
 
-- `Overall Rating`, `Potential`, `Wage`, `International Reputation`
-- `Release Clause`, `Height`, `Weight`, `Age`
-- Derived stats: `Base Stats`, `Total Stats`, `Best Overall`
+## 📂 Dataset Overview
+
+- Extracted from SoFIFA (FIFA player ratings)
+- 1000s of professional players with stats like:
+  - `Overall Rating`, `Potential`, `Wage`, `Release Clause`
+  - `Best Overall`, `International Reputation`
+  - Physical attributes: `Height`, `Weight`, `Age`
+  - Engineered: `Base Stats`, `Total Stats`, etc.
 
 ---
 
 ## 🧰 Tech Stack
 
 - **Frontend**: Streamlit
+- **Scraping**: BeautifulSoup, requests
 - **Data Analysis**: Pandas, Seaborn, Matplotlib
 - **Machine Learning**: Scikit-Learn (`RandomForestRegressor`)
-- **Visualization**: Heatmaps, Pairplots, Residual analysis
 
 ---
 
-## 🚀 How to Run the App
+## 📊 Highlights
 
-You can access the app using the link: https://aymang.streamlit.app/Market_Value_Prediction
+- Correlation heatmaps for all and selected attributes
+- Pairplots to observe relationships
+- Top 10 undervalued and overvalued players
+- Residual plots and model evaluation
+- Actual vs. predicted market value scatter plots
 
+---
+
+## ✅ Model Performance
+- R² Score
+- Adjusted R²
+- RMSE (Root Mean Squared Error)
+- Cross-Validation (5-Fold R² Scores)
