@@ -1,6 +1,6 @@
 # ⚽ Football Player Market Value Prediction
 
-This interactive web app predicts the **actual market value** of football players using their FIFA stats. Built with **Streamlit** and powered by **machine learning**, this project provides correlation analysis, feature selection, model building, and insights into undervalued and overvalued players.
+This interactive web app predicts the **actual market value** of football players using their FIFA stats. Built with **Streamlit** and powered by **machine learning**, this project provides correlation analysis, feature selection, model building, and insights into undervalued and overvalued players. The live project can be found on https://aymang.streamlit.app/Market_Value_Prediction 
 
 ---
 
