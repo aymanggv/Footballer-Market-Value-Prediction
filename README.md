@@ -6,7 +6,7 @@ This interactive web app predicts the **actual market value** of football player
 
 ## 🧠 Project Summary
 
-- 🔍 **Data Collection**: Player data was retrieved via **web scraping** from [SoFIFA.com](https://sofifa.com) using Python (`requests`, `BeautifulSoup`) — see [`FootballData.ipynb`](./FootballData.ipynb).
+- 🔍 **Data Collection**: Player data was retrieved via **web scraping** from [SoFIFA.com](https://sofifa.com) using Python (`requests`, `BeautifulSoup`) — see [`FootballData.ipynb`](scripts/FootballData.ipynb).
 - 🧼 **Data Cleaning & Engineering**: Unnecessary features were dropped, and columns were renamed and processed for modeling.
 - 📊 **Exploratory Analysis**: Heatmaps, pairplots, and correlation matrices to analyze features.
 - 🤖 **Modeling**: A **Random Forest Regressor** predicts player market value.
