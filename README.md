@@ -17,7 +17,7 @@ This interactive web app predicts the **actual market value** of football player
 ## 📂 Dataset Overview
 
 - Extracted from SoFIFA (FIFA player ratings)
-- 1000s of professional players with stats like:
+- 10,000+ professional players with stats like:
   - `Overall Rating`, `Potential`, `Wage`, `Release Clause`
   - `Best Overall`, `International Reputation`
   - Physical attributes: `Height`, `Weight`, `Age`
